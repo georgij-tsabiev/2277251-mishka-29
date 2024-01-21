@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мишка: Вязание на заказ">
+  <title>Мишка: Вязание на заказ</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32.png">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="page">
+  <header class="header">
+    <a class="header__logo-link" href="index.html">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/stack.svg#logo-desktop" width="149" height="72">
+        <source media="(min-width: 768px)" srcset="img/stack.svg#logo-tablet" width="114" height="46">
+        <img class="header__logo-img" src="img/stack.svg#logo-mobile" width="86" height="35" alt="Логотип сайта Мишка.">
+      </picture>
+    </a>
+    <nav class="nav nav--closed nav--no-js nav--extended">
+      <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
+        <span class="nav__toggle-line"></span>
+      </button>
+      <ul class="nav__list site-list reset-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--search" href="#">
+            <span class="site-list__search-text">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="site-list__item">
+          <button class="button site-list__link site-list__link--cart" type="button">Корзина: пока пуста</button>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link site-list__delivery-link" href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__main">
+    <section class="page__hero hero hero--additional">
+      <h1 class="hero__title">Вязание на заказ</h1>
+    </section>
+    <section class="page__form">
+      <h2 class="visually-hidden">Форма заказа.</h2>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <section class="form__fieldset form__order-type container">
+          <div class="form__title-wrapper">
+            <h2 class="form__title">Тип</h2>
+          </div>
+          <ul class="form__radio-list radio-list reset-list">
+            <li class="radio-list__item">
+              <label class="radio-list__control control">
+                <input class="radio-list__field visually-hidden" type="radio" name="order-type" value="interior-accessory" checked>
+                <span class="control__outline radio-list__control-outline"></span>
+                <span class="radio-list__text">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="radio-list__item">
+              <label class="radio-list__control control">
+                <input class="radio-list__field visually-hidden" type="radio" name="order-type" value="kids-toy">
+                <span class="control__outline radio-list__control-outline"></span>
+                <span class="radio-list__text radio-list__text--size">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="form__product-color">
+          <div class="form__product-color-wrapper">
+            <div class="form__title-wrapper">
+              <h2 class="form__title">Цвет</h2>
+            </div>
+            <ul class="form__checkbox-list checkbox-list reset-list">
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="product-color" value="color-white" checked>
+                  <span class="control__outline checkbox-list__control-outline"></span>
+                  <span class="checkbox-list__text">Белый</span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="product-color" value="color-grey" checked>
+                  <span class="control__outline checkbox-list__control-outline"></span>
+                  <span class="checkbox-list__text">Серый</span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="product-color" value="color-tiffany">
+                  <span class="control__outline checkbox-list__control-outline"></span>
+                  <span class="checkbox-list__text">Тиффани</span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="product-color" value="color-black">
+                  <span class="control__outline checkbox-list__control-outline"></span>
+                  <span class="checkbox-list__text">Черный</span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="product-color" value="color-pink">
+                  <span class="control__outline checkbox-list__control-outline"></span>
+                  <span class="checkbox-list__text">Розовый</span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="product-color" value="color-orange">
+                  <span class="control__outline checkbox-list__control-outline"></span>
+                  <span class="checkbox-list__text">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="form__fieldset form__introduce container">
+          <div class="form__title-wrapper">
+            <h2 class="form__title">Фио</h2>
+          </div>
+          <ul class="form__introduce-list reset-list">
+            <li class="form__introduce-item">
+              <label class="form__label" for="user-name">Имя:</label>
+              <input class="form__field field form__field--name" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="form__introduce-item">
+              <label class="form__label" for="user-surname">Фамилия:</label>
+              <input class="form__field field form__field--surname" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="form__introduce-item">
+              <label class="form__label" for="user-patronymic">Отчество:</label>
+              <input class="form__field field form__field--patronymic" type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </section>
+        <section class="form__fieldset form__contact-details">
+          <div class="container">
+            <h2 class="visually-hidden">Контактные данные</h2>
+            <ul class="form__contacts-list reset-list">
+              <li class="form__contacts-item">
+                <div class="form__title-wrapper">
+                  <label class="form__contacts-label form__title" for="user-number">Тел</label>
+                </div>
+                <div class="form__field-wrapper form__field-wrapper--phone">
+                  <input class="form__field field" type="tel" name="user-number" id="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Ваш номер телефона." required>
+                </div>
+              </li>
+              <li class="form__contacts-item">
+                <div class="form__title-wrapper">
+                  <label class="form__contacts-label form__title" for="user-email">E-mail</label>
+                </div>
+                <div class="form__field-wrapper form__field-wrapper--email">
+                  <input class="form__field field" type="email" name="user-email" id="user-email" placeholder="Ваш Email*" aria-label="Ваш email." required>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="form__fieldset form__additional container">
+          <div class="form__title-wrapper">
+            <h2 class="form__title">Доп</h2>
+          </div>
+          <textarea class="user-emotions-field field" name="user-wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <span class="form__required-fields-text">*Поля обязательны для заполнения</span>
+          <button class="form__submit-button button button--main" type="submit">Отправить заказ</button>
+        </section>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="footer__logo-link" href="index.html">
+        <svg class="footer__logo" width="102" height="35">
+          <use href="img/stack.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <ul class="footer__social-list social reset-list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+        </li>
+      </ul>
+      <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">Разработано</a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

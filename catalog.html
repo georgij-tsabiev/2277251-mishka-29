@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мишка: Главная">
+  <title>Мишка: Главная</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32.png">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+<body class="page">
+  <header class="header">
+    <a class="header__logo-link" href="index.html">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/stack.svg#logo-desktop" width="149" height="72">
+        <source media="(min-width: 768px)" srcset="img/stack.svg#logo-tablet" width="114" height="46">
+        <img class="header__logo-img" src="img/stack.svg#logo-mobile" width="86" height="35" alt="Логотип сайта Мишка.">
+      </picture>
+    </a>
+    <nav class="nav nav--closed nav--no-js nav--extended">
+      <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
+        <span class="nav__toggle-line"></span>
+      </button>
+      <ul class="nav__list site-list reset-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--search" href="#">
+            <span class="site-list__search-text">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="site-list__item">
+          <button class="button site-list__link site-list__link--cart" type="button">Корзина: пока пуста</button>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link site-list__delivery-link" href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__main">
+    <section class="page__hero hero hero--additional">
+      <h1 class="hero__title">Каталог товаров</h1>
+    </section>
+    <section class="page__catalog catalog container">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog__list reset-list">
+        <li class="catalog__item">
+          <a class="catalog__image-link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/catalog-bouncing-bunny-desktop.webp 1x, img/catalog/catalog-bouncing-bunny-desktop@2x.webp 2x" width="316" height="462">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-bouncing-bunny-tablet.webp 1x, img/catalog/catalog-bouncing-bunny-tablet@2x.webp 2x"  width="334" height="334">
+              <source type="image/webp" srcset="img/catalog/catalog-bouncing-bunny.webp 1x, img/catalog/catalog-bouncing-bunny@2x.webp 2x" width="260" height="195">
+              <source media="(min-width: 1150px)" srcset="img/catalog/catalog-bouncing-bunny-desktop.jpg, img/catalog/catalog-bouncing-bunny-desktop@2x.jpg 2x" width="316" height="462">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-bouncing-bunny-tablet.jpg, img/catalog/catalog-bouncing-bunny-tablet@2x.jpg 2x" width="334" height="334">
+              <img class="catalog__image" src="img/catalog/catalog-bouncing-bunny.jpg" srcset="img/catalog/catalog-bouncing-bunny@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+            </picture>
+          </a>
+          <div class="catalog__product-wrapper">
+            <a class="catalog__product-link" href="#">Зайчик-попрыгайчик</a>
+            <dl class="catalog__product-features">
+              <dt class="catalog__product-term">Рост</dt>
+              <dd class="catalog__product-definition">30 см,</dd>
+              <dt class="catalog__product-term">вес</dt>
+              <dd class="catalog__product-definition">200 г</dd>
+            </dl>
+            <div class="catalog__price-wrapper">
+              <span class="catalog__product-price">1 200 руб.</span>
+              <button class="page__order-button button catalog__add-to-cart" type="button" aria-label="Добавить в корзину."></button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__image-link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/catalog-laundry-basket-desktop.webp 1x, img/catalog/catalog-laundry-basket-desktop@2x.webp 2x" width="316" height="462">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-laundry-basket-tablet.webp 1x, img/catalog/catalog-laundry-basket-tablet@2x.webp 2x"  width="334" height="334">
+              <source type="image/webp" srcset="img/catalog/catalog-laundry-basket.webp 1x, img/catalog/catalog-laundry-basket@2x.webp 2x" width="260" height="195">
+              <source media="(min-width: 1150px)" srcset="img/catalog/catalog-laundry-basket-desktop.jpg, img/catalog/catalog-laundry-basket-desktop.jpg 2x" width="316" height="462">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-laundry-basket-tablet.jpg, img/catalog/catalog-laundry-basket-tablet@2x.jpg 2x" width="334" height="334">
+              <img class="catalog__image" src="img/catalog/catalog-laundry-basket.jpg" srcset="img/catalog/catalog-laundry-basket@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья.">
+            </picture>
+          </a>
+          <div class="catalog__product-wrapper">
+            <a class="catalog__product-link catalog__product-link--cart" href="#">Корзинка для белья</a>
+            <dl class="catalog__product-features">
+              <dt class="catalog__product-term">Диаметр</dt>
+              <dd class="catalog__product-definition">15 см,</dd>
+              <dt class="catalog__product-term">высота</dt>
+              <dd class="catalog__product-definition">10 см</dd>
+            </dl>
+            <div class="catalog__price-wrapper">
+              <span class="catalog__product-price">690 руб.</span>
+              <button class="page__order-button button catalog__add-to-cart" type="button" aria-label="Добавить в корзину."></button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__image-link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/catalog-toys-basket-desktop.webp 1x, img/catalog/catalog-toys-basket-desktop@2x.webp 2x" width="316" height="462">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-toys-basket-tablet.webp 1x, img/catalog/catalog-toys-basket-tablet@2x.webp 2x"  width="334" height="334">
+              <source type="image/webp" srcset="img/catalog/catalog-toys-basket.webp 1x, img/catalog/catalog-toys-basket@2x.webp 2x" width="260" height="195">
+              <source media="(min-width: 1150px)" srcset="img/catalog/catalog-toys-basket-desktop.jpg, img/catalog/catalog-toys-basket-desktop@2x.jpg 2x" width="316" height="462">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-toys-basket-tablet.jpg, img/catalog/catalog-toys-basket-tablet@2x.jpg 2x" width="334" height="334">
+              <img class="catalog__image" src="img/catalog/catalog-toys-basket.jpg" srcset="img/catalog/catalog-toys-basket@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+            </picture>
+          </a>
+          <div class="catalog__product-wrapper">
+            <a class="catalog__product-link catalog__product-link--extended" href="#">Большая корзинка для&nbsp;игрушек</a>
+            <dl class="catalog__product-features">
+              <dt class="catalog__product-term">Диаметр</dt>
+              <dd class="catalog__product-definition">30 см,</dd>
+              <dt class="catalog__product-term">высота</dt>
+              <dd class="catalog__product-definition">30 см</dd>
+            </dl>
+            <div class="catalog__price-wrapper">
+              <span class="catalog__product-price">1 500 руб.</span>
+              <button class="page__order-button button catalog__add-to-cart" type="button" aria-label="Добавить в корзину."></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="page__production-process video-presentation container">
+      <div class="video-presentation__description">
+        <a class="video-presentation__link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/catalog-videopresentation-desktop.webp 1x, img/catalog/catalog-videopresentation-desktop@2x.webp 2x" width="683" height="455">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-videopresentation-tablet.webp 1x, img/catalog/catalog-videopresentation-tablet@2x.webp 2x"  width="668" height="455">
+            <source type="image/webp" srcset="img/catalog/catalog-videopresentation.webp 1x, img/catalog/catalog-videopresentation@2x.webp 2x" width="260" height="150">
+            <source media="(min-width: 1150px)" srcset="img/catalog/catalog-videopresentation-desktop.jpg, img/catalog/catalog-videopresentation-desktop.jpg 2x" width="683" height="455">
+            <source media="(min-width: 768px)" srcset="img/catalog/catalog-videopresentation-tablet.jpg, img/catalog/catalog-videopresentation@2x.jpg 2x" width="668" height="455">
+            <img class="video-presentation__image" src="img/catalog/catalog-videopresentation.jpg" srcset="img/catalog/catalog-videopresentation@2x.jpg 2x" width="260" height="150" alt="Превью видеопрезентации процесса производства товаров.">
+          </picture>
+        </a>
+        <h2 class="video-presentation__title">Процесс производства</h2>
+        <p class="video-presentation__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="video-presentation__order-button button button--main" href="#">Сделать заказ</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="footer__logo-link" href="index.html">
+        <svg class="footer__logo" width="102" height="35">
+          <use href="img/stack.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <ul class="footer__social-list social reset-list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+        </li>
+      </ul>
+      <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">Разработано</a>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__control modal__add-to-cart">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <ul class="modal__list reset-list">
+        <li class="modal__item">
+          <button class="button modal__size-button modal__size-button--active" type="button" aria-label="Размер S.">S</button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button" aria-label="Размер M.">M</button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button" aria-label="Размер L.">L</button>
+        </li>
+      </ul>
+      <button class="button modal__add-button button--additional" type="button" aria-label="Добавить в корзину.">Добавить</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

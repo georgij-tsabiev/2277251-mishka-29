@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мишка: Главная">
+  <title>Мишка: Главная</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32.png">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="page">
+  <header class="header">
+    <a class="header__logo-link" href="index.html">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/stack.svg#logo-desktop" width="149" height="72">
+        <source media="(min-width: 768px)" srcset="img/stack.svg#logo-tablet" width="114" height="46">
+        <img class="header__logo-img" src="img/stack.svg#logo-mobile" width="86" height="35" alt="Логотип сайта Мишка.">
+      </picture>
+    </a>
+    <nav class="nav nav--closed nav--no-js">
+      <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
+        <span class="nav__toggle-line"></span>
+      </button>
+      <ul class="nav__list site-list reset-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--search" href="#">
+            <span class="site-list__search-text">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="site-list__item">
+          <button class="button site-list__link site-list__link--cart" type="button">Корзина: пока пуста</button>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link site-list__delivery-link" href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__main">
+    <section class="page__hero hero">
+      <h1 class="hero__title">Милые штуки ручной <br> работы для дома</h1>
+      <ul class="hero__list reset-list container">
+        <li class="hero__item">
+          <a class="hero__link hero__link--interior" href="#">Предметы <br> интерьера</a>
+        </li>
+        <li class="hero__item">
+          <a class="hero__link hero__link--toys" href="#">Детские <br> игрушки</a>
+        </li>
+      </ul>
+    </section>
+    <section class="page__knitted-baskets knitted-baskets container">
+      <h2 class="knitted-baskets__title title">Вязаные корзинки</h2>
+      <p class="knitted-baskets__description">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках и трёх размерах.</p>
+      <dl class="knitted-baskets__features">
+        <dt class="knitted-baskets__term">Цвет:</dt>
+        <dd class="knitted-baskets__definition">тиффани/серый</dd>
+        <dt class="knitted-baskets__term">Диаметр:</dt>
+        <dd class="knitted-baskets__definition">25 см</dd>
+        <dt class="knitted-baskets__term">Высота:</dt>
+        <dd class="knitted-baskets__definition">15 см</dd>
+      </dl>
+      <div class="knitted-baskets__image-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/knitted-baskets-desktop.webp 1x, img/index/knitted-baskets-desktop@2x.webp 2x" width="525" height="636">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index/knitted-baskets-tablet.webp 1x, img/index/knitted-baskets-tablet@2x.webp 2x"  width="334" height="404">
+          <source type="image/webp" srcset="img/index/knitted-baskets.webp 1x, img/index/knitted-baskets@2x.webp 2x" width="260" height="315">
+          <source media="(min-width: 1150px)" srcset="img/index/knitted-baskets-desktop.jpg, img/index/knitted-baskets-desktop@2x.jpg 2x" width="525" height="636">
+          <source media="(min-width: 768px)" srcset="img/index/knitted-baskets-tablet.jpg, img/index/knitted-baskets-tablet@2x.jpg 2x" width="334" height="404">
+          <img class="knitted-baskets__image" src="img/index/knitted-baskets.jpg" srcset="img/index/knitted-baskets@2x.jpg 2x" width="260" height="315" alt="Вязаная корзина ручной работы.">
+        </picture>
+      </div>
+      <div class="knitted-baskets__order-wrapper">
+        <span class="knitted-baskets__price">Цена: 990 руб.</span>
+        <!-- Модальное окно открывается при нажатии на кнопку "Заказать" -->
+        <a class="page__order-button knitted-baskets__order-button" href="#">Заказать</a>
+      </div>
+    </section>
+    <section class="page__about-us about-us container">
+      <h2 class="about-us__title title">Коротко о нас:</h2>
+      <ul class="about-us__list reset-list">
+        <li class="about-us__item about-us__item--ecologic-materials">Экологически чистые&nbsp;материалы</li>
+        <li class="about-us__item about-us__item--scandinavian-style">Скандинавский стиль по&nbsp;российской цене</li>
+        <li class="about-us__item about-us__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+        <li class="about-us__item about-us__item--hand-knitted">Связано вручную с&nbsp;любовью&nbsp;и умилением</li>
+        <li class="about-us__item about-us__item--rocket">Поддержка&nbsp;отечественного производителя</li>
+        <li class="about-us__item about-us__item--gift-wrap">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
+      </ul>
+    </section>
+    <section class="page__reviews slider">
+      <h2 class="slider__title title">Отзывы</h2>
+      <p class="slider__review-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+      <p class="slider__review-author">Анастасия Красильникова<span class="slider__review-author-link">@misssssiskras</span>
+      </p>
+      <ul class="slider__control-list reset-list">
+        <li class="slider__control-item">
+          <button class="slider__button slider__prev" type="button" aria-label="Показать предыдущий отзыв."></button>
+        </li>
+        <li class="slider__control-item">
+          <button class="slider__button slider__next" type="button" aria-label="Показать следующий отзыв."></button>
+        </li>
+      </ul>
+      <a class="slider__write-review button button--main" href="#">Написать</a>
+    </section>
+    <section class="page__contacts contacts container">
+      <h2 class="contacts__title title">Контакты</h2>
+      <div class="contacts__wrapper">
+        <span class="contacts__text">e-mail:</span>
+        <a class="contacts__mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <address class="contacts__address">
+          <span class="contacts__text">адрес:</span>
+          <p class="contacts__address-description">г. Санкт-Петербург ул.&nbsp;Большая&nbsp;Конюшенная д. 19/8, офис 101</p>
+        </address>
+      </div>
+      <div class="page__map map map--no-js" id="map"></div>
+      <div class="contacts__map-image-wrapper contacts__map-image-wrapper--no-js">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/map-image-desktop.webp 1x, img/index/map-image-desktop@2x.webp 2x" width="527" height="457">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index/map-image-tablet.webp 1x, img/index/map-image-tablet@2x.webp 2x"  width="768" height="457">
+          <source type="image/webp" srcset="img/index/map-image.webp 1x, img/index/map-image@2x.webp 2x" width="320" height="455">
+          <source media="(min-width: 1150px)" srcset="img/index/map-image-desktop.jpg, img/index/map-image-desktop@2x.jpg 2x" width="527" height="457">
+          <source media="(min-width: 768px)" srcset="img/index/map-image-tablet.jpg, img/index/map-image-tablet@2x.jpg 2x" width="768" height="457">
+          <img class="contacts__map-image" src="img/index/map-image.jpg" srcset="img/index/map-image@2x.jpg 2x" width="320" height="455" alt="Мы на карте.">
+        </picture>
+      </div>
+      <a class="contacts__write-us button button--main" href="#">Напишите нам</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="footer__logo-link" href="index.html">
+        <svg class="footer__logo" width="102" height="35">
+          <use href="img/stack.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <ul class="footer__social-list social reset-list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+        </li>
+      </ul>
+      <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">Разработано</a>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__control modal__add-to-cart">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <ul class="modal__list reset-list">
+        <li class="modal__item">
+          <button class="button modal__size-button modal__size-button--active" type="button" aria-label="Размер S.">S</button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button" aria-label="Размер M.">M</button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button" aria-label="Размер L.">L</button>
+        </li>
+      </ul>
+      <button class="button modal__add-button button--additional" type="button" aria-label="Добавить в корзину.">Добавить</button>
+    </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7588d1f7-5393-400e-bb93-5c54ef7b8d5c&lang=ru_RU"></script>
+  <script src="js/map.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
